@@ -76,7 +76,7 @@ SCHEDULER.every '1h', first_in: 0 do
   end
 end
 
-SCHEDULER.every '10s', first_in: 0 do
+SCHEDULER.every '30s', first_in: 0 do
   # get current users on site
 
   graphs.each_pair do |graph_id, property_id|
@@ -94,11 +94,7 @@ SCHEDULER.every '10s', first_in: 0 do
         data['current'] = 0
       end
     end
-  end
-end
 
-SCHEDULER.every '2s', first_in: 0 do
-  graph_data.each_pair do |graph_id, data|
     send_event(graph_id, points: data['historical'], displayedValue: data['current'])
   end
 end
