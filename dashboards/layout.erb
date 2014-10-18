@@ -37,7 +37,14 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
       ga('create', 'UA-48399585-13', 'auto');
-      ga('send', 'pageview');
+
+      function ping() {
+        // This window stays open for most visitors, which is only tracked once
+        // by default. So, tell GA we're on this page every minute we're here.
+        ga('send', 'pageview');
+        window.setTimeout(ping, 60*1000);
+      };
+      ping();
     </script>
   </body>
 </html>
