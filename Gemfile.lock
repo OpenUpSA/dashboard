@@ -39,6 +39,7 @@ GEM
       retriable (>= 1.4)
       signet (>= 0.5.0)
       uuidtools (>= 2.1.0)
+    hashie (3.3.1)
     hike (1.2.3)
     jwt (1.0.0)
     launchy (2.4.2)
@@ -92,3 +93,4 @@ PLATFORMS
 DEPENDENCIES
   dashing
   google-api-client
+  hashie

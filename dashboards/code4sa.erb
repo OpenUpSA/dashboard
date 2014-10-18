@@ -1,36 +1,11 @@
-<% content_for :title do %>My super sweet dashboard<% end %>
+<% content_for :title do %>Code4SA Dashboard<% end %>
+
 <div class="gridster">
   <ul>
+<% for website in websites %>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="ga-hood" data-view="Rickshawgraph" data-title="Know Your Hood" data-default-alpha="0.3" data-max="75"></div>
+      <div data-id="<%=website.id %>" data-view="Rickshawgraph" data-title="<%=website.title %>" data-default-alpha="0.3" data-max="75" style="background-color: #b3cde3"></div>
     </li>
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="ga-med-db" data-view="Rickshawgraph" data-title="med-db" data-default-alpha="0.3" data-max="75"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="ga-opendatanow" data-view="Rickshawgraph" data-title="Open Data Now" data-default-alpha="0.3" data-max="75"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="ga-bills" data-view="Rickshawgraph" data-title="bills.pmg.org.za" data-default-alpha="0.3" data-max="75"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="ga-living-wage" data-view="Rickshawgraph" data-title="Living Wage" data-default-alpha="0.3" data-max="75"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="ga-protest-map" data-view="Rickshawgraph" data-title="Protest Map" data-default-alpha="0.3" data-max="75" style="background-color: #8dd3c7"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="ga-hospital-finder" data-view="Rickshawgraph" data-title="Hospitals" data-default-alpha="0.3" data-max="75"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="ga-wazimap" data-view="Rickshawgraph" data-title="Wazimap.co.za" data-default-alpha="0.3"></div>
-    </li>
+<% end %>
   </ul>
 </div>

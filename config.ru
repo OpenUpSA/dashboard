@@ -1,5 +1,8 @@
 require 'dashing'
 
+$:.unshift(File.dirname(__FILE__) + '/lib')
+require 'websites'
+
 configure do
   set :auth_token, 'YOUR_AUTH_TOKEN'
 
@@ -7,6 +10,10 @@ configure do
     def protected!
      # Put any authentication code you want in here.
      # This method is run before accessing any resource.
+    end
+
+    def websites
+      get_websites
     end
   end
 end

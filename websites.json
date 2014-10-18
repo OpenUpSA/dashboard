@@ -1,0 +1,36 @@
+{
+  "websites": [
+    {
+      "tracking_id": "UA-48399585-9",
+      "title": "Living Wage"
+    },
+    {
+      "tracking_id": "UA-48399585-10",
+      "title": "Protest Map"
+    },
+    {
+      "tracking_id": "UA-48399585-12",
+      "title": "Hospitals"
+    },
+    {
+      "tracking_id": "UA-48399585-5",
+      "title": "Wazimap.co.za"
+    },
+    {
+      "tracking_id": "UA-48399585-3",
+      "title": "medb-db"
+    },
+    {
+      "tracking_id": "UA-48399585-2",
+      "title": "Know Your Hood"
+    },
+    {
+      "tracking_id": "UA-48399585-8",
+      "title": "PMG Bills"
+    },
+    {
+      "tracking_id": "UA-48399585-7",
+      "title": "Open Data Now"
+    }
+  ]
+}

@@ -1,16 +1,9 @@
 require 'google/api_client'
 
-graphs = {
-  'ga-wazimap.co.za' => 'UA-48399585-5',
-  #'ga-code4sa.org' => 'UA-48399585-1',
-  'ga-hood' => 'UA-48399585-2',
-  'ga-med-db' => 'UA-48399585-3',
-  'ga-opendatanow' => 'UA-48399585-7',
-  'ga-bills' => 'UA-48399585-8',
-  'ga-living-wage' => 'UA-48399585-9',
-  'ga-protest-map' => 'UA-48399585-10',
-  'ga-hospital-finder' => 'UA-48399585-12',
-}
+graphs = {}
+for website in get_websites
+  graphs[website.id] = website.tracking_id
+end
 
 # setup the client
 client = Google::APIClient.new
