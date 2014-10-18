@@ -24,7 +24,7 @@ Running locally
 Google API Key
 --------------
 
-You need to get a (Google OAuth 2.0 Service account key)[https://developers.google.com/accounts/docs/OAuth2ServiceAccount]
+You need to get a [Google OAuth 2.0 Service account key)(https://developers.google.com/accounts/docs/OAuth2ServiceAccount)
 and grant it access to the Google Analytics scope.
 
 The Google API key comes in PKCS12 format. This must be converted to PEM format so
