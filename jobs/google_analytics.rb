@@ -1,23 +1,28 @@
 require 'google/api_client'
 
-graphs = {}
-for website in get_websites
-  graphs[website.id] = website.tracking_id
-end
+google_account_id = '301981928719-8l5uovftgnct3fqltt6r8k2ut25o4tp8@developer.gserviceaccount.com'
 
 # setup the client
 client = Google::APIClient.new
-key = Google::APIClient::KeyUtils.load_from_pkcs12('Analytics-37c8c35ea464.p12', 'notasecret')
+key = Google::APIClient::KeyUtils.load_from_pem(ENV['GOOGLE_API_KEY'].gsub('\n', "\n"), 'notasecret')
 client.authorization = Signet::OAuth2::Client.new(
   :token_credential_uri => 'https://accounts.google.com/o/oauth2/token',
   :audience => 'https://accounts.google.com/o/oauth2/token',
   :scope => 'https://www.googleapis.com/auth/analytics',
-  :issuer => '301981928719-8l5uovftgnct3fqltt6r8k2ut25o4tp8@developer.gserviceaccount.com',
+  :issuer => google_account_id,
   :signing_key => key)
 client.authorization.fetch_access_token!
-# TODO: store this somewhere
 ga = client.discovered_api('analytics', 'v3') 
 
+graphs = {}
+graph_data = {}
+for website in get_websites
+  graphs[website.id] = website.tracking_id
+  graph_data[website.id] = {
+    historical: [],
+    current: 0,
+  }
+end
 
 # walk through accounts and match tracking IDs to property IDs
 for account in client.execute(api_method: ga.management.accounts.list).data.items
@@ -40,16 +45,6 @@ graphs.each_pair do |graph_id, tracking_id|
   if tracking_id =~ /^UA-/
     raise ArgumentError.new("Couldn't map tracking id #{tracking_id} to a web property for graph #{graph_id}. Check permissions on the Google Analytics account and the tracking id.")
   end
-end
-
-
-# setup data holders
-graph_data = {}
-graphs.each_key do |id|
-  graph_data[id] = {
-    historical: [],
-    current: 0,
-  }
 end
 
 SCHEDULER.every '1h', first_in: 0 do
