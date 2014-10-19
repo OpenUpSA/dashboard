@@ -43,6 +43,9 @@
         // by default. So, tell GA we're on this page every minute we're here.
         ga('send', 'pageview');
         window.setTimeout(ping, 60*1000);
+
+        // also ping heroku to prevent it from shutting it down
+        $.ajax({url: '/ping.txt'});
       };
       ping();
     </script>
