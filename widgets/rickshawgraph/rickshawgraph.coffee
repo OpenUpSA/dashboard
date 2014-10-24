@@ -23,6 +23,31 @@ class Dashing.Rickshawgraph extends Dashing.Widget
       return number
  
   getRenderer: () -> return @get('renderer') or @get('graphtype') or 'area'
+
+  # Retrieve the `latest` value of the graph.
+  @accessor 'latest', ->
+    answer = null
+ 
+    series = @_parseData {points: @get('points'), series: @get('series')}
+    if !(series?.length > 0)
+      # No data in series
+      answer = ''
+
+    else
+      answer = 0
+      answer += s.data[s.data.length - 1].y or 0 for s in series
+
+    return formatNumber answer
+
+  
+  # Retrieve current users on site, in a nicer format than current
+  @accessor 'currently', ->
+    current = @get('current')
+    if current == 0
+      return ''
+    else
+      return '+' + current
+
  
   # Retrieve the `current` value of the graph.
   @accessor 'current', ->
@@ -173,8 +198,9 @@ class Dashing.Rickshawgraph extends Dashing.Widget
     }
     if Rickshaw.Fixtures.Time.Local
       xAxisOptions.timeFixture = new Rickshaw.Fixtures.Time.Local()
- 
-    x_axis = new Rickshaw.Graph.Axis.Time xAxisOptions
+
+    if @get('xaxis') != 'none'
+      x_axis = new Rickshaw.Graph.Axis.Time xAxisOptions
     y_axis = new Rickshaw.Graph.Axis.Y(graph: graph, tickFormat: Rickshaw.Fixtures.Number.formatKMBT)
  
     if @get("legend")
