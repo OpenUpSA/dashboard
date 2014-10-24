@@ -9,6 +9,10 @@ It shows historical Google Analytics session data for the last 7 days
 (including today), and refreshes it every hour. It refreshes the realtime visitor
 count every 10 seconds.
 
+Here's an example with random data:
+
+![alt tag](https://github.com/Code4SA/dashboard/blob/master/example.png)
+
 Development
 ===========
 
