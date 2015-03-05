@@ -2,7 +2,11 @@
   "websites": [
     {
       "tracking_id": "UA-48399585-9",
-      "title": "Living Wage"
+      "title": "Living Wage Calculator"
+    },
+    {
+      "tracking_id": "UA-48399585-18",
+      "title": "Living Wage Story"
     },
     {
       "tracking_id": "UA-48399585-10",
