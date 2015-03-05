@@ -2,7 +2,8 @@
   "websites": [
     {
       "tracking_id": "UA-44046318-1",
-      "title": "Code4SA Website"
+      "title": "Code4SA Website",
+      "max": "100"
     },
     {
       "tracking_id": "UA-48399585-15",
@@ -23,11 +24,12 @@
     {
       "tracking_id": "UA-48399585-5",
       "title": "Wazimap.co.za",
-      "max": "500"
+      "max": "200"
     },
     {
       "tracking_id": "UA-3444003-4",
-      "title": "OpenByLaws.org.za"
+      "title": "OpenByLaws.org.za",
+      "max": "100"
     },
     {
       "tracking_id": "UA-48399585-11",
