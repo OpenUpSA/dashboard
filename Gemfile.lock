@@ -46,6 +46,7 @@ GEM
     jwt (1.0.0)
     launchy (2.4.2)
       addressable (~> 2.3)
+    log4r (1.1.10)
     mailchimp-api (2.0.5)
       excon (>= 0.16.0)
       json (>= 1.7.7)
@@ -99,4 +100,5 @@ DEPENDENCIES
   dashing
   google-api-client
   hashie
+  log4r
   mailchimp-api (~> 2.0.5)
