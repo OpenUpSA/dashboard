@@ -6,18 +6,6 @@
       "max": "100"
     },
     {
-      "tracking_id": "UA-48399585-9",
-      "title": "Living Wage Calc"
-    },
-    {
-      "tracking_id": "UA-48399585-18",
-      "title": "Living Wage Story"
-    },
-    {
-      "tracking_id": "UA-48399585-15",
-      "title": "SA Newsmakers"
-    },
-    {
       "tracking_id": "UA-44046318-2",
       "title": "MPR"
     },
@@ -36,6 +24,18 @@
       "title": "PMG.org.za",
       "max": "5000",
       "class": "popular"
+    },
+    {
+      "tracking_id": "UA-48399585-9",
+      "title": "Living Wage Calc"
+    },
+    {
+      "tracking_id": "UA-48399585-18",
+      "title": "Living Wage Story"
+    },
+    {
+      "tracking_id": "UA-48399585-15",
+      "title": "SA Newsmakers"
     },
     {
       "tracking_id": "UA-48399585-11",
