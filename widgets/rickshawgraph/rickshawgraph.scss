@@ -100,10 +100,15 @@ $tick-color:        rgba(0, 0, 0, 0.4);
     }
   }
 
-
   // custom stuff
   .currently {
     color: #3d9970;
+  }
+
+  &.popular {
+    .value {
+      font-size: 48px;
+    }
   }
  
 }

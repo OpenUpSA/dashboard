@@ -22,10 +22,6 @@
       "title": "MPR"
     },
     {
-      "tracking_id": "UA-48399585-10",
-      "title": "Protest Map"
-    },
-    {
       "tracking_id": "UA-48399585-5",
       "title": "Wazimap.co.za",
       "max": "200"
@@ -36,8 +32,18 @@
       "max": "100"
     },
     {
+      "tracking_id": "UA-10305579-1",
+      "title": "PMG.org.za",
+      "max": "5000",
+      "class": "popular"
+    },
+    {
       "tracking_id": "UA-48399585-11",
       "title": "Speak Up"
+    },
+    {
+      "tracking_id": "UA-48399585-10",
+      "title": "Protest Map"
     },
     {
       "tracking_id": "UA-48399585-7",

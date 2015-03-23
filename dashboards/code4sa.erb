@@ -4,7 +4,7 @@
   <ul>
 <% for website in websites %>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="<%=website.id %>" data-view="Rickshawgraph" data-title="<%=website.title %>" data-default-alpha="0.3" data-max="<%= website['max'] or 75 %>" data-xaxis="none" style="background-color: #b3cde3"></div>
+      <div data-id="<%=website.id %>" data-view="Rickshawgraph" data-title="<%=website.title %>" data-default-alpha="0.3" data-max="<%= website['max'] or 75 %>" data-xaxis="none" class="<%=website['class']%>" style="background-color: #b3cde3"></div>
     </li>
 <% end %>
     <li data-row="4" data-col="4" data-sizex="1" data-sizey="1">
