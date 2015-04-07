@@ -27,7 +27,8 @@
     },
     {
       "tracking_id": "UA-48399585-9",
-      "title": "Living Wage Calc"
+      "title": "Living Wage Calc",
+      "max": "500"
     },
     {
       "tracking_id": "UA-48399585-18",
