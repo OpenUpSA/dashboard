@@ -4,7 +4,7 @@
       "tracking_id": "UA-44046318-1",
       "title": "Code4SA Website",
       "class": "popular",
-      "max": "300"
+      "max": "500"
     },
     {
       "tracking_id": "UA-44046318-2",
@@ -30,12 +30,13 @@
     {
       "tracking_id": "UA-48399585-9",
       "title": "Living Wage Calc",
-      "max": "500",
+      "max": "12000",
       "class": "popular"
     },
     {
       "tracking_id": "UA-48399585-18",
       "class": "popular",
+      "max": "1000",
       "title": "Living Wage Story"
     },
     {
