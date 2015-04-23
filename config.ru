@@ -28,6 +28,10 @@ configure do
     def websites
       get_websites
     end
+
+    def apis
+      get_apis
+    end
   end
 end
 

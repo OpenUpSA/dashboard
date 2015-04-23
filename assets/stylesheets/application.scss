@@ -255,3 +255,27 @@ h3 {
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
+
+// code4sa graph styles
+
+.popular {
+  .value {
+    font-size: 48px;
+  }
+}
+
+.website {
+  background-color: #b3cde3;
+
+  .currently {
+    color: #3d9970;
+  }
+}
+
+.api {
+  background-color: lightsalmon;
+
+  .currently {
+    color: palegreen;
+  }
+}

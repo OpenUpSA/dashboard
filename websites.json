@@ -85,5 +85,31 @@
       "tracking_id": "UA-48399585-13",
       "title": "This Dashboard"
     }
+  ],
+  "apis": [
+    {
+      "app_id": 7091619,
+      "title": "Maps API",
+      "class": "popular",
+      "max": 5000
+    },
+    {
+      "app_id": 7046624,
+      "title": "Wards API",
+      "class": "popular",
+      "max": 5000
+    },
+    {
+      "app_id": 7671232,
+      "title": "Redirects API",
+      "class": "popular",
+      "max": 5000
+    },
+    {
+      "app_id": 7107338,
+      "title": "Elections API",
+      "class": "popular",
+      "max": 5000
+    }
   ]
 }

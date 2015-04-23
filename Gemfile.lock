@@ -50,13 +50,18 @@ GEM
     mailchimp-api (2.0.5)
       excon (>= 0.16.0)
       json (>= 1.7.7)
+    mime-types (2.1)
     multi_json (1.10.1)
     multipart-post (2.0.0)
+    netrc (0.10.3)
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    rest-client (1.7.3)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
     retriable (1.4.1)
     rufus-scheduler (2.0.24)
       tzinfo (>= 0.3.22)
@@ -102,3 +107,4 @@ DEPENDENCIES
   hashie
   log4r
   mailchimp-api (~> 2.0.5)
+  rest-client

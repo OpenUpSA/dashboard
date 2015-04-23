@@ -1,12 +1,17 @@
 require 'hashie'
 
+$config = File.open("websites.json") { |f| Hashie::Mash.new(JSON.load(f)) }
+
+# process config file
+for property in $config.websites + $config.apis
+  # default id from title
+  property.id = property.title.downcase.gsub(/[ .]/, '-') if property.id.nil?
+end
+
 def get_websites
-  websites = File.open("websites.json") { |f| Hashie::Mash.new(JSON.load(f)) }.websites
+  $config.websites
+end
 
-  for website in websites
-    # default id from title
-    website.id = website.title.downcase.gsub(/[ .]/, '-') if website.id.nil?
-  end
-
-  websites
+def get_apis
+  $config.apis
 end

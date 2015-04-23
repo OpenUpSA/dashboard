@@ -26,7 +26,7 @@ graph_data = {}
 for website in get_websites
   graphs[website.id] = website.tracking_id
   graph_data[website.id] = {
-    historical: [],
+    historical: [{x: 0, y: 0}],
     current: 0,
   }
 end
@@ -89,7 +89,7 @@ SCHEDULER.every '1h', first_in: 0 do
         }
       end
 
-      data['historical'] = historical
+      data[:historical] = historical
     end
   end
 end
@@ -98,6 +98,7 @@ SCHEDULER.every '30s', first_in: 0 do
   # get current users on site
 
   graphs.each_pair do |graph_id, property_id|
+    data = graph_data[graph_id]
     response = client.execute(api_method: ga.data.realtime.get, parameters: {
       ids: "ga:#{property_id}",
       metrics: 'rt:activeUsers'
@@ -106,15 +107,16 @@ SCHEDULER.every '30s', first_in: 0 do
     if response.error?
       logger.error "#{graph_id}: realtime data error: #{response.error_message}"
     elsif response.data?
-      data = graph_data[graph_id]
 
       if response.data.totalResults > 0
-        data['current'] = response.data.rows[0][0].to_i
+        data[:current] = response.data.rows[0][0].to_i
       else
-        data['current'] = 0
+        data[:current] = 0
       end
     end
 
-    send_event(graph_id, points: data['historical'], displayedValue: data['current'])
+    unless data[:historical].empty?
+      send_event(graph_id, points: data[:historical], displayedValue: data[:current])
+    end
   end
 end

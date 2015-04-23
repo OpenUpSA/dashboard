@@ -2,11 +2,18 @@
 
 <div class="gridster">
   <ul>
-<% for website in websites %>
+<% for property in websites %>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="<%=website.id %>" data-view="Rickshawgraph" data-title="<%=website.title %>" data-default-alpha="0.3" data-max="<%= website['max'] or 75 %>" data-xaxis="none" class="<%=website['class']%>" style="background-color: #b3cde3"></div>
+      <div data-id="<%=property.id %>" data-view="Rickshawgraph" data-title="<%=property.title %>" data-default-alpha="0.3" data-max="<%= property['max'] or 75 %>" data-xaxis="none" class="website <%=property['class']%>"></div>
     </li>
 <% end %>
+
+<% for property in apis %>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="<%=property.id %>" data-view="Rickshawgraph" data-title="<%=property.title %>" data-default-alpha="0.3" data-max="<%= property['max'] or 75 %>" data-xaxis="none" class="api <%=property['class']%>"></div>
+    </li>
+<% end %>
+
     <li data-row="4" data-col="4" data-sizex="1" data-sizey="1">
       <div data-id="naked-data-subscribers" data-view="Number" data-title="Naked Data Subs"></div>
     </li>
