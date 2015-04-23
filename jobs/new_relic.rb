@@ -1,3 +1,5 @@
+require 'log4r'
+
 logger = Log4r::Logger.new('new_relic')
 logger.outputters << Log4r::StderrOutputter.new('stderr')
 logger.outputters[0].formatter = Log4r::SimpleFormatter.new
