@@ -88,12 +88,6 @@
       "max": 1500
     },
     {
-      "app_id": 7091619,
-      "title": "Maps API",
-      "class": "popular",
-      "max": 1000
-    },
-    {
       "app_id": 7046624,
       "title": "Wards API",
       "class": "popular",
