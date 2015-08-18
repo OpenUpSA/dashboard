@@ -33,7 +33,13 @@ end
 
 # walk through accounts and match tracking IDs to property IDs
 logger.info "Mapping tracking IDs to property IDs"
-for account in client.execute(api_method: ga.management.accounts.list).data.items
+response = client.execute(api_method: ga.management.accounts.list)
+if response.error?
+  logger.error response.error_message
+  exit 1
+end
+
+for account in response.data.items
   response = client.execute(api_method: ga.management.webproperties.list, parameters: {accountId: account.id})
 
   if response.error?
@@ -94,7 +100,7 @@ SCHEDULER.every '1h', first_in: 0 do
   end
 end
 
-SCHEDULER.every '30s', first_in: 0 do
+SCHEDULER.every '5m', first_in: 0 do
   # get current users on site
 
   graphs.each_pair do |graph_id, property_id|
