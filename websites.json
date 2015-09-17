@@ -94,6 +94,12 @@
       "max": 1000
     },
     {
+      "app_id": 6546311,
+      "title": "Indigo API",
+      "class": "popular",
+      "max": 500
+    },
+    {
       "app_id": 7671232,
       "title": "Redirects API",
       "class": "popular",
