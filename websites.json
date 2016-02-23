@@ -8,7 +8,8 @@
     },
     {
       "tracking_id": "UA-44046318-2",
-      "title": "MPR"
+      "title": "MPR",
+      "max": "100"
     },
     {
       "tracking_id": "UA-48399585-5",
@@ -24,7 +25,7 @@
     {
       "tracking_id": "UA-10305579-1",
       "title": "PMG.org.za",
-      "max": "8000",
+      "max": "9000",
       "class": "popular"
     },
     {
