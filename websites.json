@@ -41,6 +41,10 @@
       "class": "popular"
     },
     {
+      "tracking_id": "UA-48399585-37",
+      "title": "Municipal Money"
+    },
+    {
       "tracking_id": "UA-48399585-9",
       "title": "Living Wage Calc"
     },
@@ -104,6 +108,11 @@
       "title": "Mapit",
       "class": "popular",
       "max": 1500
+    },
+    {
+      "app_id": 17255764,
+      "title": "Municipal Money",
+      "max": 500
     },
     {
       "app_id": 7046624,
