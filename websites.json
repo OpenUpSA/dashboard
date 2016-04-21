@@ -42,7 +42,9 @@
     },
     {
       "tracking_id": "UA-48399585-37",
-      "title": "Municipal Money"
+      "title": "Municipal Money",
+      "max": "500",
+      "class": "popular"
     },
     {
       "tracking_id": "UA-48399585-9",
@@ -112,7 +114,8 @@
     {
       "app_id": 17255764,
       "title": "Municipal Money",
-      "max": 500
+      "max": "1500",
+      "class": "popular"
     },
     {
       "app_id": 7046624,
