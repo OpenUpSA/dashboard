@@ -41,8 +41,14 @@
       "class": "popular"
     },
     {
+      "tracking_id": "UA-48399585-40",
+      "title": "Municipal Money Scorecard",
+      "max": "500",
+      "class": "popular"
+    },
+    {
       "tracking_id": "UA-48399585-37",
-      "title": "Municipal Money",
+      "title": "Municipal Money Data",
       "max": "500",
       "class": "popular"
     },
@@ -80,10 +86,6 @@
       "title": "Open Data Now"
     },
     {
-      "tracking_id": "UA-48399585-4",
-      "title": "2009 Candidates"
-    },
-    {
       "tracking_id": "UA-48399585-3",
       "title": "medb-db"
     },
@@ -114,7 +116,7 @@
     {
       "app_id": 17255764,
       "title": "Municipal Money API",
-      "max": "1500",
+      "max": "10000",
       "class": "popular"
     },
     {
