@@ -4,13 +4,13 @@
   <ul>
 <% for property in websites %>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="<%=property.id %>" data-view="Rickshawgraph" data-title="<%=property.title %>" data-default-alpha="0.3" data-max="<%= property['max'] or 75 %>" data-xaxis="none" class="website <%=property['class']%>"></div>
+      <div data-id="<%=property.id %>" data-view="Rickshawgraph" data-title="<%=property.title %>" data-default-alpha="0.3" <% if property['max'] %>data-max="<%= property['max'] %>"<% end %> data-xaxis="none" class="website <%=property['class']%>"></div>
     </li>
 <% end %>
 
 <% for property in apis %>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="<%=property.id %>" data-view="Rickshawgraph" data-title="<%=property.title %>" data-default-alpha="0.3" data-max="<%= property['max'] or 75 %>" data-xaxis="none" class="api <%=property['class']%>"></div>
+      <div data-id="<%=property.id %>" data-view="Rickshawgraph" data-title="<%=property.title %>" data-default-alpha="0.3" <% if property['max'] %>data-max="<%= property['max'] %>"<% end %> data-xaxis="none" class="api <%=property['class']%>"></div>
     </li>
 <% end %>
 

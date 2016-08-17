@@ -2,60 +2,43 @@
   "websites": [
     {
       "tracking_id": "UA-44046318-1",
-      "title": "Code4SA Website",
-      "class": "popular",
-      "max": "300"
+      "title": "Code4SA Website"
     },
     {
       "tracking_id": "UA-48399585-36",
-      "title": "Academy",
-      "max": "100"
+      "title": "Academy"
     },
     {
       "tracking_id": "UA-48399585-43",
-      "title": "Naked Data",
-      "max": "100"
+      "title": "Naked Data"
     },
     {
       "tracking_id": "UA-44046318-2",
-      "title": "MPR",
-      "max": "100"
+      "title": "MPR"
     },
     {
       "tracking_id": "UA-48399585-5",
-      "title": "Wazimap.co.za",
-      "max": "200",
-      "class": "popular"
+      "title": "Wazimap.co.za"
     },
     {
       "tracking_id": "UA-3444003-4",
-      "title": "OpenByLaws.org.za",
-      "max": "200",
-      "class": "popular"
+      "title": "OpenByLaws.org.za"
     },
     {
       "tracking_id": "UA-10305579-1",
-      "title": "PMG.org.za",
-      "max": "9000",
-      "class": "popular"
+      "title": "PMG.org.za"
     },
     {
       "tracking_id": "UA-48399585-35",
-      "title": "Embeds",
-      "max": "9000",
-      "class": "popular"
+      "title": "Embeds"
     },
     {
       "tracking_id": "UA-48399585-40",
-      "title": "Municipal Money Scorecard",
-      "max": "500",
-      "class": "popular"
+      "title": "Municipal Money Scorecard"
     },
     {
       "tracking_id": "UA-48399585-37",
-      "title": "Municipal Money Data",
-      "max": "500",
-      "class": "popular"
+      "title": "Municipal Money Data"
     },
     {
       "tracking_id": "UA-48399585-9",
@@ -71,8 +54,7 @@
     },
     {
       "tracking_id": "UA-48399585-11",
-      "title": "Speak Up Mzansi",
-      "max": "200"
+      "title": "Speak Up Mzansi"
     },
     {
       "tracking_id": "UA-48399585-26",
@@ -110,39 +92,27 @@
   "apis": [
     {
       "app_id": 9344999,
-      "title": "Mapit",
-      "class": "popular",
-      "max": 40000
+      "title": "Mapit"
     },
     {
       "app_id": 17255764,
-      "title": "Municipal Money API",
-      "max": "10000",
-      "class": "popular"
+      "title": "Municipal Money API"
     },
     {
       "app_id": 7046624,
-      "title": "Wards API",
-      "class": "popular",
-      "max": 1000
+      "title": "Wards API"
     },
     {
       "app_id": 6546311,
-      "title": "Indigo API",
-      "class": "popular",
-      "max": 1000
+      "title": "Indigo API"
     },
     {
       "app_id": 7671232,
-      "title": "Redirects API",
-      "class": "popular",
-      "max": 500
+      "title": "Redirects API"
     },
     {
       "app_id": 7107338,
-      "title": "Elections API",
-      "class": "popular",
-      "max": 500
+      "title": "Elections API"
     }
   ]
 }
