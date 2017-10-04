@@ -41,6 +41,10 @@
       "title": "Youth Explorer"
     },
     {
+      "tracking_id": "UA-93649482-7",
+      "title": "Treasury CKAN"
+    },
+    {
       "tracking_id": "UA-48399585-35",
       "title": "Embeds"
     },
@@ -69,10 +73,6 @@
       "title": "Naked Data"
     },
     {
-      "tracking_id": "UA-48399585-26",
-      "title": "NU Muni Census"
-    },
-    {
       "tracking_id": "UA-48399585-29",
       "title": "data.gov.za"
     },
@@ -91,10 +91,6 @@
     {
       "tracking_id": "UA-48399585-17",
       "title": "Data Portal"
-    },
-    {
-      "tracking_id": "UA-48399585-13",
-      "title": "This Dashboard"
     }
   ],
   "apis": [
