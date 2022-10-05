@@ -1,7 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.3.6)
+    addressable (2.8.0)
+      public_suffix (>= 2.0.2, < 5.0)
     autoparse (0.3.3)
       addressable (>= 2.3.1)
       extlib (>= 0.9.15)
@@ -54,6 +55,7 @@ GEM
     multi_json (1.10.1)
     multipart-post (2.0.0)
     netrc (0.10.3)
+    public_suffix (3.1.1)
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
