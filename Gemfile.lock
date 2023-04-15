@@ -42,7 +42,7 @@ GEM
       uuidtools (>= 2.1.0)
     hashie (3.3.1)
     hike (1.2.3)
-    json (1.8.1)
+    json (2.6.1)
     jwt (1.0.0)
     launchy (2.4.2)
       addressable (~> 2.3)
